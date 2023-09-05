@@ -78,7 +78,7 @@ nav ul a{
 
   
 .banner-container{
-    max-width: 1150px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -154,16 +154,65 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+/* download and install ection  */
+.download-container{
+    max-width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    height: 500px;
+    gap: 130px;
+    
+    
+}
+.download-container h2{
+    text-align: center;
+    margin-top: 170px;
+    padding-bottom: 25px;
+    font-size:3rem;
+}
+.download-container span{
+    color:#F948B2 ;
+}
+.download-text{
+    width: 50%;
+   
+    
+}
+.download-container p{
+    text-align: center;
+    color:#534C64;
+    flex-wrap: 600;
+}
+.download-img{
+    width: 50%;
+}
+.download-img img{
+    width: 100%;
+    height: 100%;
+}
+.second-img{
+    width: 250px;
+    height: 250px;
+   background-image: url("images/Rectangle\ 66.png");
+   background-repeat: no-repeat;
+    position: relative;
+    bottom: 220px;
+    right: 125px;
+    
+}
 
 /* responsive section  */
 /* mobile responsive */
 @media screen and (max-width:576px) {
- nav{
+ nav ,.download-container{
     flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 0 30px;
  }
  nav ul a{
     display: block;
-   margin-bottom: 30px;
+   margin-top: 30px;
    text-align: center;
  }
  .gamer-logo{
@@ -178,13 +227,16 @@ background-clip: text;
  .banner-container{
     flex-direction: column-reverse;
     max-width: 300px;
+    margin: 0 30px;
    
  }
  .banner-img{
     width: 100%;
+    height: 100%;
     margin-bottom: 50px;
  }
- .banner-text{
+ 
+ .banner-text,.download-text{
     width: 100%;
    
  }
@@ -192,8 +244,17 @@ background-clip: text;
  .online-games-cotainer{
     grid-template-columns: 1fr;
     text-align: center;
+    margin: 0 30px;
 }
- 
+/* download and install section */
+.download-img{
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+ }
+.download-container h2{
+    margin-top: 0;
+}
 }
    
     
