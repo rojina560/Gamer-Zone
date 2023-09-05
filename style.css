@@ -8,16 +8,16 @@ body{
 
 }
 header{
-    max-width: 1150px;
+    max-width: 1100px;
     margin: 0 auto;
-  
-
 }
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
+    background: #fff;
    
 
 }
@@ -35,6 +35,12 @@ nav{
 .gamer-logo span{
     color: #FF42A5 ;
 }
+nav ul .follow-btn {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    border: 0;
+    padding: 5px 10px 10px
+}
 
 nav ul a{
     text-decoration: none;
@@ -42,6 +48,65 @@ nav ul a{
     font-weight: 500;
     font-size: 18px;
     margin-right: 20px;
+}
+/* banner section code */
+
+  
+.banner-container{
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+   
+    
+    
+}
+.banner-text{
+    width: 50%;
+   
+    
+
+}
+.banner-text ul{
+    list-style-position: inside;
+    list-style: none;
+   padding: 10px 0;
+  color:  #534C64;
+} 
+.banner-text ul li i{
+  padding-right: 10px;
+   
+}
+.banner-text h2{
+    font-size: 35px;
+    color: #0B0223;
+}
+.banner-text h3{
+    font-size: 4rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+.banner-img{
+    width: 50%;
+  background: #ffff;
+
+}
+.banner-img img{
+    width: 100%;
+}
+.btn-primary{
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 0;
+    background:#F948B2;
+    color: white;
+    font-weight: 600;
+    font-weight: 18px;
+}
+.btn-secondary{
+    background: #4EC5F7;
 }
 /* responsive section  */
 /* mobile responsive */
@@ -62,6 +127,18 @@ nav ul a{
     padding: 5px;
     margin: 0;
  }
+ .banner-container{
+    flex-direction: column-reverse;
+   
+ }
+ .banner-img{
+    width: 100%;
+ }
+ .banner-text{
+    width: 100%;
+    margin-left: 40px;
+ }
+ 
 }
    
     
